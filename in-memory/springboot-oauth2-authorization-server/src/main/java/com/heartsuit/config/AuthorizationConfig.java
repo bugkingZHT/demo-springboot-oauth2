@@ -33,7 +33,7 @@ public class AuthorizationConfig extends AuthorizationServerConfigurerAdapter {
                 .secret(passwordEncoder().encode("secret0"))
                 .authorizedGrantTypes("implicit", "refresh_token") //Implicit grant type not supported from token endpoint
                 .scopes("read", "write")
-                .redirectUris("http://localhost:8000/public/hello");
+                .redirectUris("http://localhost:8000/private/hello");
     }
 
     /**

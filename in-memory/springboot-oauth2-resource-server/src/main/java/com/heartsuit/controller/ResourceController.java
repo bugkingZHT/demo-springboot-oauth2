@@ -20,6 +20,7 @@ public class ResourceController {
     public String privateResource(@PathVariable String info) {
         return "Private information : " + info;
     }
+
     @GetMapping("/private/read/{info}")
     public String privateRead(@PathVariable String info) {
         return "Private read : " + info;
