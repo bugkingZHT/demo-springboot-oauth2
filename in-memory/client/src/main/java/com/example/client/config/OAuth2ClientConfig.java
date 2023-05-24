@@ -20,6 +20,10 @@ public class OAuth2ClientConfig {
 //    @Value("${security.oauth2.client.clientSecret}")
 //    private String clientSecret;
 
+    /**
+     * OAuth2RestTemplate Refer:
+     *      https://github.com/spring-projects/spring-security/wiki/OAuth-2.0-Migration-Guide#client
+     */
     @Bean
     public OAuth2RestTemplate oAuth2RestTemplate() {
         ClientCredentialsResourceDetails resourceDetails = new ClientCredentialsResourceDetails();
