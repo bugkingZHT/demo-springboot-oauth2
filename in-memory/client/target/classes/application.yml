@@ -1,0 +1,21 @@
+server:
+  port: 8081
+#security:
+#  oauth2:
+#    client:
+#      registration:
+#        custom:
+#          client-id: clientId
+#          client-secret: clientSecret
+#          authorization-grant-type: authorization_code
+#          redirect-uri: http://localhost:8080/callback
+#          scope: read,write
+#          client-name: Custom Client
+#          client-authentication-method: post
+#          provider: custom-provider
+#        provider:
+#          custom-provider:
+#          token-uri: http://localhost:8080/oauth/token
+#          authorization-uri: http://localhost:8080/oauth/authorize
+#          user-info-uri: http://localhost:8080/userinfo
+#          user-name-attribute: name
