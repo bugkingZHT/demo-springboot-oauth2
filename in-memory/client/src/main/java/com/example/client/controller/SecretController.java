@@ -15,8 +15,8 @@ import java.util.Map;
 
 @Slf4j
 @Controller
-@RequestMapping("/api")
-public class ClientController {
+@RequestMapping("/secret")
+public class SecretController {
 
     @GetMapping("/home")
     @ResponseBody
@@ -30,7 +30,7 @@ public class ClientController {
 
     @GetMapping("/")
     @ResponseBody
-    public String main() {
+    public String main(OAuth2AuthenticationToken token) {
         String result = oAuth2RestTemplate.getForObject("http://localhost:8000/private/hello", String.class);
 
         Map<String, String> response = new HashMap<>();
